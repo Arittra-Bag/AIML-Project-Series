@@ -37,6 +37,3 @@ This is a simple chatbot implementation using Gradio and the Generative Language
 4. Enter text in the input box, and the chatbot will generate responses based on the conversation history.
 
 5. To exit the chatbot, press `Ctrl+C` in the terminal where the script is running.
-
-## License
--
