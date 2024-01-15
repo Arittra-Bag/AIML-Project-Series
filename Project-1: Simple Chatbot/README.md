@@ -7,6 +7,16 @@ This is a simple chatbot implementation using Gradio and the Generative Language
 - Python 3.x
 - Required Python libraries: `gradio`, `requests`
 
+## Obtaining API Key
+
+To use this chatbot, you need to obtain an API key from Google's Generative Language API. Follow these steps:
+
+1. Visit the [Google Cloud Console](https://console.cloud.google.com/).
+2. Create a new project (or select an existing one).
+3. Enable the "Generative Language" API for your project.
+4. Create API credentials and obtain your API key.
+P.S: If you have an existing project in your Cloud Console, get it from [here](https://ai.google.dev/).
+
 ## Installation
 
 1. Clone the repository:
