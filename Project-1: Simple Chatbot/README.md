@@ -32,3 +32,6 @@ To use this chatbot, you need to obtain an API key from Google's Generative Lang
 4. Enter text in the input box, and the chatbot will generate responses based on the conversation history.
 
 5. To exit the chatbot, press `Ctrl+C` in the terminal where the script is running.
+
+## Disclaimer
+The generated output may not be accurate or precise. It is a machine-generated response and should be used at the user's discretion. The developer is not responsible for any inaccuracies or misuse of the information provided by the chatbot. Use the output safely and verify critical information from official sources.
