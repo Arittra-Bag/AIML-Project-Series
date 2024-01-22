@@ -23,44 +23,11 @@ pip install pandas scikit-learn ipywidgets
 
 1. Open the Jupyter Notebook or Google Colab where you want to run the system.
 
-2. Load the training dataset:
+2. Run the interactive dropdown interface. Select at least 3 symptoms, and view the predicted disease. Please note that providing more symptoms may result in more accurate predictions.
+```
+P.S: You can get the documented code from Project-3.ipynb
+```
 
-    ```python
-    import pandas as pd
+## Disclaimer
 
-    # Load the training dataset
-    df = pd.read_csv('/path/to/Training.csv')
-    ```
-
-3. Train the RandomForestClassifier model (replace with your actual training logic):
-
-    ```python
-    from sklearn.ensemble import RandomForestClassifier
-
-    # Assuming X_train and y_train are your training features and labels
-    model = RandomForestClassifier()
-    model.fit(X_train, y_train)
-    ```
-
-4. Create an interactive dropdown interface:
-
-    ```python
-    from sklearn.preprocessing import LabelEncoder
-    from ipywidgets import interact_manual, Dropdown
-
-    # Exclude 'prognosis' from the symptom list
-    symptoms = df.columns[:-1].tolist()
-
-    # Encode the 'prognosis' column using LabelEncoder
-    label_encoder = LabelEncoder()
-    df['prognosis'] = label_encoder.fit_transform(df['prognosis'])
-
-    # Create a function to make predictions based on selected symptoms
-    def predict_disease(**selected_symptoms):
-        # ... (use the provided code for this function)
-
-    # Create an interactive dropdown for each symptom excluding 'prognosis'
-    interact_manual(predict_disease, **{symptom: Dropdown(options=[0, 1], description=symptom) for symptom in symptoms if symptom != 'prognosis'})
-    ```
-
-5. Run the interactive dropdowns, select symptom values, and view the predicted disease.
+This system is for educational purposes only. The predictions made by the model are based on the provided dataset and may not be accurate in a real-world scenario. Consult a medical professional for accurate diagnosis and treatment. The developer is not responsible for any wrong predictions or actions taken based on the predictions.
